@@ -1,7 +1,6 @@
 body {
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+ 
     scroll-behavior: smooth;
     
 }
@@ -42,10 +41,10 @@ footer{
 h1{
     font-weight: 800 ;
 }
-.conatiner{
+/* .conatiner{
     margin: 0;
     padding: 100px;
-}
+} */
 #imglogo{
     height: 35px;
     width: 140px;
@@ -57,10 +56,10 @@ h1{
     width: 120px;
 }
 
-#bg{
+/* #bg{
     height: 100%;
     width: 100%;
-}
+} */
 .btn-warning{
     width: 100%;
     border-radius: 50px;
@@ -70,28 +69,21 @@ h1{
 }
 
 #nav {
-
     z-index: 2;
     position: relative;
-    display: flex;
+    /* display: flex; */
     background-color: #FFF;
     border-radius: 90px ;
     height: 90px;
     width: 95%;
     padding: 10px;
+    margin-left: 2%;
    
     
 }
-/* #nav-btn{
-    /* border: 2px solid rebeccapurple; */
-    /* float: right;
-    padding: auto;
-    position: relative;
-    margin-left: 10.5%;} */
 
-#login-btn{ 
-   
-    margin: px;
+#login-btn{  
+  /* margin-top: -10px;bg */
     padding-left:10px;
     height: 55px;
     width: 75px;
@@ -100,8 +92,9 @@ h1{
     text-decoration: none;
     
 }
-#signup-btn{
-    
+#signup-btn{ 
+    /* margin-top: -10px; */
+    /* padding: 0;    */
     background-color: black;
     color: #FFF;
    
@@ -114,49 +107,203 @@ h1{
  #linktree{
     font-size: 30px;
     margin-left: 20px;
-
     font-weight: 500;
  }
  #img{
- 
     position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: grid;
-    place-items: center;
-    height: 100%;
-    width: 100%;    /* position: relative;  */
     z-index: -1;
+   mx-height: auto;
+    width: auto;
  }
+ #img1{
+    position: relative;
+    z-index: -1;
+   mx-height: auto;
+    width: auto;
+ }
+ .container{
+    width: auto;
+    position: absolute;
+    top: 130%;
+    right: 5%;
+    /* border: 2px solid red; */
+ }
+
+
+@media only screen and (max-width:700px){
+   #img {
+    position: relative;
+      z-index: -1;    
+      height: 950px;
+    }
+   #img1 {
+    position: relative;
+      z-index: -1;
+      height: 95px;
+    }
+    .container{
+        width: auto;
+        position: absolute;
+        top: 130%;
+        left: 5%;    
+     }
+     .container-flude{
+        height: 600px;
+        width: auto;
+        top: 10%;
+        right: 0%;
+        padding: 20px;    
+        position: absolute;   
+       
+    }
+    .container-flude1{
+        width: auto;
+        top: 25%;
+        left: 8%;
+        position: absolute;
+        z-index: 1;  
+        font-size: 10px;
+        font-weight: 100;
+    }
+    #cont{   
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight: 800; 
+        word-spacing: 10px;
+        line-height: 1;
+       
+    }
+    #nav {
+        z-index: 2;
+        /* position: relative; */
+        display: flex;
+        background-color: #FFF;
+        border-radius: 90px ;
+        height: 60px;
+        width: 95%;
+        padding: 0px;
+        margin-left: 2%;
+               
+    }
+
+   #p{
+    font-size: 20px;
+   }
+    
+  }
+
+@media only screen and (max-width:1000px){   
+    #img {
+        position: relative;
+          z-index: -1;
+          width: auto;
+          height: 950px;
+        }
+        .container{
+            width: auto;
+            position: absolute;
+            top: 130%;
+            left: 5%;
+            /* border: 2px solid red; */
+         }
+         .container-flude1{
+            width: auto;
+            top: 25%;
+            left: 8%;
+            position: absolute;
+            z-index: 1;  
+            font-size: 100px;
+            font-weight: 100;
+        }
+        #p{
+            font-size: 20px;
+        }
+    }
+
+
+
+ @media only screen and (min-width:910px) and (max-width:1370px){   
+    #img {
+        position: relative;
+          z-index: -1;
+          width: auto;
+          height: 950px;
+        }
+        .container{
+            width: auto;
+            position: absolute;
+            top: 90%;
+            left: 20%;
+            /* border: 2px solid red; */
+         }
+         .container-flude1{
+            width: auto;
+            top: 25%;
+            left: 8%;
+            position: absolute;
+            z-index: 1;  
+            font-size: 100px;
+            font-weight: 100;
+        }
+   
+    #p1{
+        padding-top: 20px;
+        z-index: 1; 
+        /* word-spacing: 20px; */
+        /* line-height: 1; */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      
+        font-size: 30px;
+        font-weight: 800;
+    }
+    
+  }
+
+ 
  #nav{
-    top: 0.5%;
-    left: 3%;
-        
+    top: 0.1%;
     position: absolute;
  }
-.container-flude{
-    position: absolute;
+
+#p1{
+    padding-top: 20px;
+    z-index: 1; 
     word-spacing: -20px;
     line-height: 1;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    top: 20%;
-    left: 10%;
+  
     font-size: 100px;
     font-weight: 800;
 }
+
+/* .container-flude1{   
+    position: absolute; 
+ 
+} */
 .container-flude1{
+  
+    top: 25%;
+    left: 8%;
     position: absolute;
-    /* font-family: system-ui, -apple-systerif; */
-    top: 70%;
-    left: 10%;
+    z-index: 1;  
     font-size: 10px;
     font-weight: 100;
+    width: -moz-fit-content;
+    width: fit-content;  
+}
+.container-flude{
+    height: 600px;
+    width: auto;
+    top: 130%;
+    right: 0%;
+    padding: 20px;
+    /* border: 2px solid red; */
+    position: absolute;   
+   
 }
 
 #input{
-
-    margin-top: 20px;
+    /* margin-top: 1px; */
     height: 50px;
     width: 200px;
     border-radius: 10px;
@@ -176,18 +323,18 @@ h1{
     font-size: 17px;
 
 }
-#content{
-    margin: 20px 20px 20px 0;
-}
+#bg{
+    background-size: cover;
 
-#cont{
-    height: 700px;
-    width: 800px;    
-    position: absolute;
+}
+/* #content{
+    margin: 0px;
+} */
+
+#cont{   
+    /* height: 700px;
+    width: 800px;       */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   
-    top: 130%;
-    left: 45%;
     font-size: 60px;
     font-weight: 800; 
     word-spacing: 10px;
@@ -195,25 +342,19 @@ h1{
    
 }
 
-#text1{
-    top: 150%;
-    left: 45%;
-    color: rgb(71, 116, 3);
-    
-    position: absolute;
+#text1{  
+    margin: 0;
+    padding: 0 !important;
+    color: rgb(71, 116, 3);    
+    /* position: absolute; */
     font-size: 15px;
-    font-weight: 600;
-    
-    margin: 70px 20px;
+    font-weight: 600;    
+    /* margin: 70px 20px; */
 }
 .btn-secondary{
-    position: absolute;
-    top: 170%;
-    left: 45%;
+   margin-top: 30px;
     background-color: rgb(20, 147, 48);
-    height: 50px;
-    margin-top: 40px;
-    margin-left: 10px;
+    height: 50px;   
     border-radius: 50px;
     border: none;
     width: 200px;
@@ -222,31 +363,3 @@ h1{
 }
 
 
-/* #list{
-   
-    width: 700px; 
-    display: flex;
-  
-}  */
-
-/* #life-tree{
-    width: 170px;
-    height: 50px;
-    font-weight: 600;    
-    margin-left: 40px;
-    font-size: 35px;
-}
-li{ */
-    /* text-decoration: none;
-    padding-left: 20px;
-    margin-top: 16px;
-    display: inline-block;
-}
-.bi-tree-fill{
-     */
-/* }
-#img1{
-    margin-top: -100px;
-    height: 100%;
-    width: 100%;
-/* } */ 

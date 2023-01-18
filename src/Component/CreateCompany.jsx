@@ -52,12 +52,7 @@ const CreateCompany = () => {
     };
     const SubmitData = () => {
 
-       
-    
-            // Fetching()
-    
-
-        if (   !data.password || !data.schema_name || !data.company_name) {
+         if (   !data.password || !data.schema_name || !data.company_name) {
             alert("All feald requaird");
             return false;
         }
@@ -68,12 +63,16 @@ const CreateCompany = () => {
     }
     return (
         <>
+        
 
+
+                <div className='row'>
+                <div className='col-lg-2 col-sm-12 col-md-2 col-12'> <img src='assets/images/logo.png' id='signuptree' /></div>
+            </div>
             <div className='row'>
-                <div className='col-2'> <img src='assets/images/logo.png' id='signuptree' /></div>
-
-                <div className='col-6 conatiner'>
-                    <h1 className='mt-5 pt-5'>Create Company</h1>
+               
+                <div className='col-md-6 offset-md-3 text-center col-md-6 offset-md-3 p-5'>
+                    <h1 className='pt-1'>Create Company</h1>
 
                     <input
                         className='form-control my-4'
@@ -103,14 +102,8 @@ const CreateCompany = () => {
 
                     <p>Don't have account ?<Link to="/signup">Signup</Link></p>
                 </div>
-
-                <div className='col-4'>
-                    <div>
-                        <img src='assets/images/bg_6.jpg' id='bg' /></div>
-                </div>
             </div >
-
-
+       
 
         </>
     )

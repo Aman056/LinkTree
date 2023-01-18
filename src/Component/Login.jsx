@@ -61,14 +61,14 @@ const Login = () => {
   }
   return (
     <>
-
-
-      {/*  /////////////////////////////////////////////////////*/}
+      
+      {/* <img src="assets/images/bg_6.jpg" className="img-fluid" id='background' /> */}
 
       <div className='row'>
-        <div className='col-2'> <img src='assets/images/logo.png' id='signuptree' /></div>
-
-        <div className='col-6 conatiner'>
+        <div className='col-lg-2 col-sm-12 col-2 col-md-2'> <img src='assets/images/logo.png' id='signuptree' /></div>
+    </div>
+    <div className='row'>
+        <div className='col-md-6 offset-md-3 text-center col-md-6 offset-md-3 p-5 conatiner p-5'>
           <h1 className='mt-5 pt-5'>Log in With OTP</h1>
          
 
@@ -79,10 +79,7 @@ const Login = () => {
           <Link to="/create-company">Create Company</Link>
         </div>
 
-        <div className='col-4'>
-          <div>
-            <img src='assets/images/bg_6.jpg' id='bg' /></div>
-        </div>
+      
       </div >
 
     </>
