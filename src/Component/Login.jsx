@@ -13,6 +13,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const [otpsend, setotpsend] = useState({ otp: "" });
+  const [expired, setexpired] = useState('');
    
   var GetUseID = localStorage.getItem("user_id")
   // console.log(GetUseID)
@@ -37,6 +38,8 @@ const Login = () => {
       })
       .catch((err) => {
         console.log(err);
+        // console.log(err.response.data)
+        setexpired(err.response.data)
       });
 
   }
@@ -50,36 +53,40 @@ const Login = () => {
     });
   };
   const SubmitData = () => {
-    if(otpsend.otp !== '4444'){
-      alert('Please enter valid opt')
-    }
-    else{
+    // if(otpsend.otp !== '4444'){
+    //   alert('Please enter valid opt')
+    // }
+    // else{
        Fetching()
-    }
+    // }
    
     
   }
   return (
     <>
-      
-      {/* <img src="assets/images/bg_6.jpg" className="img-fluid" id='background' /> */}
+
+
+      {/*  /////////////////////////////////////////////////////*/}
 
       <div className='row'>
-        <div className='col-lg-2 col-sm-12 col-2 col-md-2'> <img src='assets/images/logo.png' id='signuptree' /></div>
-    </div>
-    <div className='row'>
-        <div className='col-md-6 offset-md-3 text-center col-md-6 offset-md-3 p-5 conatiner p-5'>
+        <div className='col-2'> <img src='assets/images/logo.png' id='signuptree' /></div>
+
+        <div className='col-6 conatiner'>
           <h1 className='mt-5 pt-5'>Log in With OTP</h1>
          
 
             <input className="userInput form-control" name="otp" type="text" placeholder="Enter The OTP" onChange={handleChange} value={otpsend.otp || ""} />
+             {expired?<p style={{color:"red"}}>{expired.error}</p> :<p style={{color:"red"}}>{expired.error}</p> }
             <button onClick={SubmitData} className="btn btn-dark"> Login with OTP</button>
          
           <p>Don't have account ?<Link to="/signup">Signup</Link></p>
           <Link to="/create-company">Create Company</Link>
         </div>
 
-      
+        <div className='col-4'>
+          <div>
+            <img src='assets/images/bg_6.jpg' id='bg' /></div>
+        </div>
       </div >
 
     </>

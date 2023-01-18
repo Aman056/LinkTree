@@ -112,8 +112,8 @@ h1{
  #img{
     position: relative;
     z-index: -1;
-   mx-height: auto;
-    width: auto;
+   height: auto;
+    width: 100%;
  }
  #img1{
     position: relative;
@@ -130,134 +130,10 @@ h1{
  }
 
 
-@media only screen and (max-width:700px){
-   #img {
-    position: relative;
-      z-index: -1;    
-      height: 950px;
-    }
-   #img1 {
-    position: relative;
-      z-index: -1;
-      height: 95px;
-    }
-    .container{
-        width: auto;
-        position: absolute;
-        top: 130%;
-        left: 5%;    
-     }
-     .container-flude{
-        height: 600px;
-        width: auto;
-        top: 10%;
-        right: 0%;
-        padding: 20px;    
-        position: absolute;   
-       
-    }
-    .container-flude1{
-        width: auto;
-        top: 25%;
-        left: 8%;
-        position: absolute;
-        z-index: 1;  
-        font-size: 10px;
-        font-weight: 100;
-    }
-    #cont{   
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 30px;
-        font-weight: 800; 
-        word-spacing: 10px;
-        line-height: 1;
-       
-    }
-    #nav {
-        z-index: 2;
-        /* position: relative; */
-        display: flex;
-        background-color: #FFF;
-        border-radius: 90px ;
-        height: 60px;
-        width: 95%;
-        padding: 0px;
-        margin-left: 2%;
-               
-    }
-
-   #p{
-    font-size: 20px;
-   }
-    
-  }
-
-@media only screen and (max-width:1000px){   
-    #img {
-        position: relative;
-          z-index: -1;
-          width: auto;
-          height: 950px;
-        }
-        .container{
-            width: auto;
-            position: absolute;
-            top: 130%;
-            left: 5%;
-            /* border: 2px solid red; */
-         }
-         .container-flude1{
-            width: auto;
-            top: 25%;
-            left: 8%;
-            position: absolute;
-            z-index: 1;  
-            font-size: 100px;
-            font-weight: 100;
-        }
-        #p{
-            font-size: 20px;
-        }
-    }
 
 
 
- @media only screen and (min-width:910px) and (max-width:1370px){   
-    #img {
-        position: relative;
-          z-index: -1;
-          width: auto;
-          height: 950px;
-        }
-        .container{
-            width: auto;
-            position: absolute;
-            top: 90%;
-            left: 20%;
-            /* border: 2px solid red; */
-         }
-         .container-flude1{
-            width: auto;
-            top: 25%;
-            left: 8%;
-            position: absolute;
-            z-index: 1;  
-            font-size: 100px;
-            font-weight: 100;
-        }
-   
-    #p1{
-        padding-top: 20px;
-        z-index: 1; 
-        /* word-spacing: 20px; */
-        /* line-height: 1; */
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      
-        font-size: 30px;
-        font-weight: 800;
-    }
-    
-  }
+
 
  
  #nav{
@@ -265,7 +141,7 @@ h1{
     position: absolute;
  }
 
-#p1{
+.p1{
     padding-top: 20px;
     z-index: 1; 
     word-spacing: -20px;
@@ -281,7 +157,7 @@ h1{
  
 } */
 .container-flude1{
-  
+ 
     top: 25%;
     left: 8%;
     position: absolute;
@@ -292,14 +168,21 @@ h1{
     width: fit-content;  
 }
 .container-flude{
+    border: 2px solid red;
     height: 600px;
     width: auto;
-    top: 130%;
-    right: 0%;
+    top: 16%;
+    left: 5%;
     padding: 20px;
     /* border: 2px solid red; */
     position: absolute;   
    
+}
+.container-flude3{
+    border: 2px solid red;
+    position: absolute;
+    top: 130%;
+    right: 15%;
 }
 
 #input{
@@ -327,25 +210,22 @@ h1{
     background-size: cover;
 
 }
-/* #content{
-    margin: 0px;
-} */
 
 #cont{   
-    /* height: 700px;
-    width: 800px;       */
+   
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 60px;
     font-weight: 800; 
     word-spacing: 10px;
     line-height: 1;
+    color: green;
    
 }
 
 #text1{  
     margin: 0;
     padding: 0 !important;
-    color: rgb(71, 116, 3);    
+    color: rgb(29, 48, 0);    
     /* position: absolute; */
     font-size: 15px;
     font-weight: 600;    
@@ -353,7 +233,7 @@ h1{
 }
 .btn-secondary{
    margin-top: 30px;
-    background-color: rgb(20, 147, 48);
+    background-color: rgb(53wa, 125, 31);
     height: 50px;   
     border-radius: 50px;
     border: none;
@@ -361,5 +241,52 @@ h1{
     font-size: 17px;
     
 }
+@media only screen and (max-width: 1000px) {
+    body {
+      background-color: lightblue;
+    }
+    #img{
+        position: relative;
+        z-index: -1;
+       height: 1000px;
+        width: 100%;
+     }
+
+    .p1{
+        font-size: 50px;
+    }
+    .container-flude{
+        border: 2px solid red;
+        height: auto;
+        width: auto;
+        top: 16%;
+        left: 5%;
+        /* padding: 20px; */
+        /* border: 2px solid red; */
+        position: absolute;   
+       
+    }
+    .container-flude3{
+        height: auto;
+        width: auto;
+        border: 2px solid red;
+        position: absolute;
+        top: 100%;
+        right: 15%;
+    }
+    #text1{  
+        margin: 0;
+        padding: 0 !important;
+        color: rgb(71, 116, 3);    
+        /* position: absolute; */
+        font-size: 15px;
+        font-weight: 600;    
+        /* margin: 70px 20px; */
+    }
+    #cont{
+        font-size: 50px;
+        color: green;
+    }
+  }
 
 
